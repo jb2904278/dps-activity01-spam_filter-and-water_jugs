@@ -1,0 +1,4 @@
+# Trusted domains: email from these domains always goes to email/ (no content check)
+senecapolytechnic.ca
+myseneca.ca
+github.com

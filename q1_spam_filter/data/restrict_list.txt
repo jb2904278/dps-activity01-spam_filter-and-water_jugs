@@ -1,0 +1,4 @@
+# Restricted domains: email from these domains always goes to spam/ (no content check)
+cheap-pills.biz
+lottery-winners.ru
+mega-deals.xyz

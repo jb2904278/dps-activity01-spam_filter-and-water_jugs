@@ -1,0 +1,8 @@
+[
+  {"name": "assignment: 12/8/3, measure 1", "capacities": [12, 8, 3], "goal": 1, "expected_steps": 3},
+  {"name": "classic 8/5/3, measure 4",      "capacities": [8, 5, 3],  "goal": 4, "expected_steps": 6},
+  {"name": "two jugs 4/3, measure 2",       "capacities": [4, 3],     "goal": 2, "expected_steps": 4},
+  {"name": "goal equals a capacity",        "capacities": [12, 8, 3], "goal": 8, "expected_steps": 1},
+  {"name": "unsolvable: gcd(6,4)=2",        "capacities": [6, 4],     "goal": 1, "expected_steps": null},
+  {"name": "unsolvable: bigger than jugs",  "capacities": [12, 8, 3], "goal": 13, "expected_steps": null}
+]

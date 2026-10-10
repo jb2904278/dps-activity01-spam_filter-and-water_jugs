@@ -1,0 +1,12 @@
+filename,expected,reason
+01_allowed_with_bad_words.eml,email,allow-listed domain overrides 10+ bad words
+02_restricted_clean.eml,spam,restricted domain overrides clean content
+03_five_bad_words.eml,email,exactly 5 bad words is not MORE than 5
+04_six_bad_words.eml,spam,7 bad words
+05_normal.eml,email,clean email (1 bad word)
+06_text_attachment.eml,spam,2 bad words in body + 4 in the text attachment = 6
+07_allowed_subdomain.eml,email,subdomain of allow-listed github.com
+08_base64_encoded_spam.eml,spam,base64 body is decoded before counting
+09_binary_attachment.eml,email,binary (PDF) attachment is not read
+10_html_spam.eml,spam,HTML body is read after removing tags
+11_restricted_subdomain.eml,spam,subdomain of restricted cheap-pills.biz

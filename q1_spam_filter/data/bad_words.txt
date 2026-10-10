@@ -1,0 +1,19 @@
+# Words (or short phrases) that often appear in spam
+free
+winner
+prize
+cash
+lottery
+viagra
+urgent
+guaranteed
+bonus
+congratulations
+claim
+million
+offer
+discount
+click here
+risk-free
+crypto
+investment

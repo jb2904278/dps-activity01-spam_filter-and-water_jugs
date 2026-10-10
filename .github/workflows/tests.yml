@@ -1,0 +1,38 @@
+name: Activity 01 – Spam Filter and Water Jugs Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.12"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: "Q1 Tests – Spam Filter Agent (8 tests: rules, allow list, bad words, attachments)"
+        run: python -m unittest tests/test_spam_agent.py -v
+
+      - name: "Q2 Tests – Water Jug BFS Search (9 tests: transition model, BFS optimality, edge cases)"
+        run: python -m unittest tests/test_water_jugs.py -v
+
+      - name: "All Tests Combined – Full Suite (17 tests total)"
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: "Q1 Demo – Run Spam Filter on 11 Sample Emails"
+        run: python -m q1_spam_filter.spam_agent
+
+      - name: "Q2 Demo – Run BFS Solver (12/8/3 gal jugs, goal = 1 gal)"
+        run: python -m q2_water_jugs.water_jugs
+

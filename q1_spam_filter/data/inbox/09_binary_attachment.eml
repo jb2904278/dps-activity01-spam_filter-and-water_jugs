@@ -1,0 +1,22 @@
+From: HR <hr@company.com>
+To: jayant@myseneca.ca
+Subject: Policy document
+Date: Thu, 01 Oct 2026 10:00:00 -0400
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============7399578348108625977=="
+
+--===============7399578348108625977==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please review the attached policy.
+
+--===============7399578348108625977==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="policy.pdf"
+MIME-Version: 1.0
+
+ZnJlZSBmcmVlIGZyZWUgZnJlZSBmcmVlIGZyZWUgZnJlZSBjYXNoIHByaXplIHdpbm5lcg==
+
+--===============7399578348108625977==--

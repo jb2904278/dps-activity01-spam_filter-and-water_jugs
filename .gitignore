@@ -1,0 +1,28 @@
+# Bytecode and runtime artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# Program execution output
+q1_spam_filter/output/
+
+# Temporary, lock, and backup files
+~$*
+*.bak
+*.tmp
+.DS_Store
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
+
+# IDE settings
+.vscode/
+.idea/
+
+# Documents & reports
+*.docx
+*.pdf
+
+
